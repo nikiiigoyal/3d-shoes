@@ -29,7 +29,17 @@ const [sole,setSole] = useState("ffffff")
     <>
       <div className='app'>
             <div className="wrapper">
+              {/* /* Main Heading */} 
+            <div className="header-section">
+              <h1 className="main-title">
+                <span className="gradient-text">Customize</span> Your Shoes
+              </h1>
+              <p className="subtitle">
+                Design your perfect shoe with our 3D customizer. Rotate, zoom, and pick your favorite colors!
+              </p>
+            </div>
         <div className="card">
+          
             <div className="product-canvas">
           <Canvas >
          <Suspense fallback={null}>
@@ -42,6 +52,22 @@ const [sole,setSole] = useState("ffffff")
           </Canvas>
 
             </div>
+            {/* Features Info */}
+            <div className="features-info">
+              <div className="feature-item">
+                <span className="feature-icon">🎨</span>
+                <span className="feature-text">Choose Colors</span>
+              </div>
+              <div className="feature-item">
+                <span className="feature-icon">🔄</span>
+                <span className="feature-text">Rotate 360°</span>
+              </div>
+              <div className="feature-item">
+                <span className="feature-icon">🔍</span>
+                <span className="feature-text">Zoom In/Out</span>
+              </div>
+            </div>
+            
             <h2>Color chooser</h2>
             <div className='colors'>
                  <div>
