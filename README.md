@@ -1,16 +1,44 @@
-# React + Vite
+# 3D Shoe Customizer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A beautiful, interactive 3D shoe customizer built with React Three Fiber. Customize colors in real-time, rotate the 3D model, and download your design!
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🎨 **Real-time Color Customization** - Change colors for main body, stripes, and sole
+- 🔄 **360° Rotation** - Full orbit controls to view from any angle
+- 🔍 **Zoom & Pan** - Interactive camera controls
+- 📱 **Responsive Design** - Works on desktop, tablet, and mobile
+- ⚡ **Fast & Smooth** - Optimized 3D rendering with React Three Fiber
 
-## React Compiler
+## 🚀 Demo
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+[Live Demo](https://3d-shoes-one.vercel.app/) 
 
-## Expanding the ESLint configuration
+## 🛠️ Technologies Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **React** - UI library
+- **React Three Fiber** - React renderer for Three.js
+- **@react-three/drei** - Useful helpers for R3F
+- **Three.js** - 3D graphics library
+- **Vite** - Build tool and dev server
+
+
+> **Important:** The GLTF model must be named exactly `shoe.gltf` and placed in the `public` folder. If you want to use a different model or name, update line 8 in `App.jsx`:
+> ```javascript
+> const { nodes, materials } = useGLTF('/your-model-name.gltf')
+> ```
+
+## 📦 GLTF Model from the github repo
+https://github.com/drcmda/floating-shoe/tree/master/resources/gltf
+
+
+
+
+
+
+
+
+
+
+
+
