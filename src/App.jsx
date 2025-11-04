@@ -25,6 +25,19 @@ const [mesh,setMesh] = useState("ffffff")
 const [stripes,setStripes] = useState("ffffff")
 const [sole,setSole] = useState("ffffff")
 
+//  const downloadScreenshot = () => {
+//   console.log('Download button clicked') // Debug
+//     if (canvas.current) {
+//       const canvas = canvas.current.querySelector('canvas')
+//       if (canvas) {
+//         const link = document.createElement('a')
+//         link.download = 'my-custom-shoe.png'
+//         link.href = canvas.toDataURL('image/png')
+//         link.click()
+//       }
+//     }
+//   }
+
   return (
     <>
       <div className='app'>
@@ -73,23 +86,29 @@ const [sole,setSole] = useState("ffffff")
                  <div>
                     <input type="color" id="mesh" name="mesh"
                            value={mesh} onChange={(e) => setMesh(e.target.value)}/>
-                    <label for="mesh">Main</label>
+                    <label htmlFor="mesh">Main</label>
                   </div>
 
                 <div>
                     <input type="color" id="stripes" name="stripes"
                             value={stripes} onChange={(e) => setStripes(e.target.value)} />
-                    <label for="stripes">Stripes</label>
+                    <label htmlFor="stripes">Stripes</label>
                 </div>
                  <div>
                     <input type="color" id="sole" name="sole"
                             value={sole} onChange={(e) => setSole(e.target.value)} />
-                    <label for="sole">Soul</label>
+                    <label htmlFor="sole">Soul</label>
                 </div>
             </div>
         </div>
     </div>
-     
+     {/* Download Button
+        <button className="download-btn" onClick={downloadScreenshot}>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+          </svg>
+          Download
+        </button> */}
 
         
       </div>
